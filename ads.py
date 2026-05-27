@@ -1,11 +1,16 @@
 import cv2
 import mediapipe as mp
 import time
+import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import yaml
 
 
+
+# Set the dispaly to be local in case this is started via ssh.
+os.environ["DISPLAY"] = ":0"
+print(os.environ["DISPLAY"])
 
 # Load the config file
 with open("config.yaml", "r") as f:
