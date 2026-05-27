@@ -8,7 +8,7 @@ import yaml
 
 
 # Load the config file
-with open("config.yml", "r") as f:
+with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
 # Load chromium window
