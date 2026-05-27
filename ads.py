@@ -85,7 +85,8 @@ while True:
             cv2.circle(frame, (x, y), 10, (0, 255, 0), -1)
 
     # Show the hand image.
-    cv2.imshow("hand", frame)
+    if config["debug_window"]:
+        cv2.imshow("hand", frame)
 
     # Increment tracked frames.
     frame_index += 1
