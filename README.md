@@ -26,15 +26,3 @@ Start it on boot:
 Get the logs:
 
 - `journalctl --user -u watch_ads.service`
-
-
-## TODO's
-
-- [ ] make chrome window close after completion
-- [ ] proper startup with fullscreen
-- [ ] clean up mediapipe code
-- [ ] create ad scraper
-- [ ] create physical penny dropper
-- [ ] infinite scroll
-- [ ] analyze demographics
-- [ ] face swap
