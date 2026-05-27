@@ -1,0 +1,15 @@
+[Unit]
+Description=watch ads make money
+After=default.target
+
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/home/%u/watch_ads_make_money
+ExecStart=/home/%u/watch_ads_make_money/.venv/bin/python /home/%u/watch_ads_make_money/ads.py
+StandardOutput=journal
+StandardError=journal
+Environment="PATH=/home/%u/watch_ads_make_money/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+[Install]
+WantedBy=default.target
